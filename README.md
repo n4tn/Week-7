@@ -101,3 +101,10 @@ Which framework to use?
   - Compact folder structure
   - Good for small apps or ones with CRUD operations
   - Easier to understand?  
+
+# Authentication & Authorization
+- who are you and how can you prove it?
+- depends on who you are if you can see this
+
+both controlled by the middleware in the request pipeline but Authentication must be first
+
