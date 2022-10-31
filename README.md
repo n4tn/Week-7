@@ -108,3 +108,107 @@ Which framework to use?
 
 both controlled by the middleware in the request pipeline but Authentication must be first
 
+# Question Bank
+
+## HTML & CSS
+- What are the new features of HTML5?
+  -  semantic markup to give meaningful structure
+  - Discourages the use of inline styles and favours the use of CSS
+  - Supports design responsiveness
+  - Promotes accessibility, hence semantic tags
+  - has multimedia support
+- What is the difference between the head and header tags?
+  - head is the tag at the top of your page containing your meta-tags, styles, scripts and title. headings are the h1, h2, h3 etc tags that allow you to size your text.
+-  What is a nav element?
+   -  represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents.
+-  What does CSS stand for?
+   - Cascading Style Sheets
+-  what does cascading mean in css?
+   1. Inline - style= "key:value" - least flexible and applied last (try not to use these)
+   2. Style tag - defined in the head 
+   3. Style sheet - needs a link tag in the head
+- Give some examples of CSS selectors
+  - id 
+  - class
+  - wildcards
+  - combinators (for example a class & the lists in the class)
+  - Flex - a way to organise the child elements of a root element
+- What is the difference between an id and a class?
+  - an ID is only used to identify one single element in our HTML
+- What is the prefix for an id?
+  - (#)
+- What is the prefix for a class?
+  - (.)
+- What is the CSS box model?
+  - essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content 
+- Why are inline styles not a good idea?
+  -  it does not support (or it has really poor support) for CSS features
+
+## JavaScript
+- Is Javascript statically or dynamically typed?  What does that mean?
+  - dynamically, variable can be overwritten and you dont have to define data types (let)
+- How do you tell if you have made a javascript error? 
+  - F12 on webpage under DevTools there is a console
+- What are some examples of events that javascript can respond to? (for example when button clicked then...)
+  - An HTML web page has finished loading.
+  - An HTML input field was changed.
+  - An HTML button was clicked.
+- Where is the best place to put your javascript and why?
+  -  put JavaScript script tags just before the closing body tag, this is because HTML loads from top to bottom
+- What is the difference between a javascript and a c# class declaration?
+  - no need to define return type with function keyword in signature
+- What is the DOM?
+  - Document Object Model that allows programs and scripts to dynamically access and update the content (objects, properties, methods & events)
+- What is Bootstrap?
+  - CSS Framework for developing responsive and mobile-first websites
+- What is JQuery?
+  - JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. 
+- How can DOM elements be accessed?
+  - id
+  - class
+  - tag
+  - query selectors 
+
+## ASP.NET Razor Pages
+- What do ASP.NET API and ASP.NET Razor pages apps have in common?  What are the differences?
+  - Razor Pages group together the action (now a handler) and the viewmodel (called a PageModel) in one class, and link this class to the view (called a Razor Page). 
+  - Handlers behave exactly like action methods but have the HTTP verb they handle in their name
+- Where does dependency injection take place in a Razor Pages application?
+  - program.cs 
+- Where is the database context registered with the Dependency Injection container?
+  - program.cs
+- What are the advantages/disadvantages of adding a service to the DI container with Singleton lifetime?
+  - Creates a new Service only once during the application lifetime, and uses it everywhere, memory efficient as they are created once reused everywhere. 
+  - Any memory leaks in these services will build up over time
+-  What other lifetimes are available?  What is the default lifetime for a database context class?
+   - Transient & scoped
+   - scoped (using block) : less memory usage and has a long enough duration
+- What is in the Web folder of an ASP.NET application?
+  - css
+  - js
+  - libraries
+- What actions happen on startup of an ASP.NET application?
+  - x
+- Where does data validation take place in Web application?
+  - data validation is handled on the server although some validation can also occur on the client before data is submitted to the server
+- What happens to data validation if javascript is disabled on the client browser?
+  -  Validation will not work 
+- How are the default web pages structured?
+  - x
+- How are requests routed to the correct page and method?
+  - matching URLs to file paths, starting from the root Razor Pages folder, which is named Pages by default , also using razor syntax (@)
+- How and why do the PageModel classes use asychronous methods?
+  - through async methods using the @model:applications should be able to handle many requests simultaneously.
+- Why would we want to seed the database?
+  - dummy data to test
+
+## More about Web Frameworks
+- Where/when is the C# code in a Razor page executed?
+  - All C# code is run when the razor view is called to produce the HTML
+- Where/when is the Javascript code in a Razor page executed?
+  - Once the browser loads the HTML, any JavaScript in the view will be executed
+- How is C# code indicated in Razor pages?
+  - (@)
+- What is model binding?
+  - a simplistic way to correlate C# code with an HTTP request  
+
